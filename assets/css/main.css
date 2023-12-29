@@ -947,6 +947,8 @@ body.light-theme{
 }
 .quote-box {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote-box .quote-title {
@@ -1044,8 +1046,78 @@ body.light-theme{
 .quote-details p #quoteAuthor {
     font-size: var(--font-size-sm);
 }
+
+.container .faq-wrapper {
+    text-align: center;
+    gap: var(--gap);
+}
+
+.container .faq-wrapper .faq {
+    background-color: var(--secondary-background-color);
+}
+
+.container .faq-wrapper .faq .faq-btn {
+    font-size: 2rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+    font-weight: bold;
+    border-bottom: solid 1.5rem;
+}
+
+.container .faq-wrapper .faq .faq-btn i {
+    font-size: 4rem;
+}
+
+.container .faq-wrapper .faq p {
+    margin: 1.5rem 1rem;
+    text-align: left;
+}
+
+.container .faq-wrapper .faq p:hover {
+    color: var(--light-color);
+}
+
+.container .faq-wrapper .faq .panel {
+    display:  none;
+    line-height: 1.4;
+}
+
+.active, .faq-btn:hover {
+    color: var(--light-color);
+}
+
+.container .faq-wrapper .faq {
+    border: .1rem solid rgba(0,0,0,.4);
+}
+
+.container .faq-wrapper .faq.active {
+    border: none;
+}
         
 /* media screens */
+@media screen and (max-width: 340px) {
+
+.quote-box .quote-btn button {
+        font-size: 1rem;
+    }
+
+    .quote-box .quote-author {
+    display: block;
+    font-size: 1rem;
+}
+
+.quote-box .quote-author::before {
+    left: -28px;
+}
+
+}
+
+
 @media screen and (max-width: 700px) {
     .about-s {
         flex-direction: column;
@@ -1057,6 +1129,32 @@ body.light-theme{
         width: 60%;
     }
 
+    .author-contact form {
+    display: flex;
+    flex-direction: column;
+    }
+
+.author-contact form .input-box {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    }
+
+    .field .item {
+    width: fit-content;
+    font-size: 1rem;
+    }
+
+    .input-field.field input {
+    width: 25rem;
+    height: 1rem;
+    }
+
+    .field .error-text {
+    font-size: 1rem;
+    }
 
 }
 

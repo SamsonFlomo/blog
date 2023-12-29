@@ -85,6 +85,25 @@ const swiper = new Swiper(".swiper", {
     }
 });
 
+// Frequently asked questions
+var faq = document.getElementsByClassName("faq-btn");
+var f;
+
+for(f = 0; f < faq.length; f++) {
+    faq[f].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if(panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+
    // Quote js
     const quote = document.getElementById("quote");
     const author_q = document.getElementById("author");
