@@ -176,63 +176,63 @@ for(f = 0; f < faq.length; f++) {
 const posts = [
     {
         title: "Is VR the future?",
-        link: "./posts/tec-1.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/posts/tec-1.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Technology",
         data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
     },
     {
         title: "Development and skills",
-        link: "./categories/skills.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/categories/skills.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Development",
         data: "Read some powerful excerps and pickup some skill along the way..."
     },
     {
         title: "God",
-        link: "./categories/God.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/categories/God.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "God",
         data: "Learn about the creator your relationship with him.", },
     {
         title: "Nature",
-        link: "./categories/nature.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/categories/nature.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Nature",
         data: "View posts about nature....",
     },
     {
         title: "Fitness",
-        link: "./categories/fitness.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/categories/fitness.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Fitness",
         data: "See and read about posts on fitness.j",
     },
     {
         title: "Inspirational or Motivational Quotes",
-        link: "./menu/quotes.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/quotes.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Quotes",
         data: "Boast your drive with some inspirational quotes.",
     },
     {
         title: "Buy me a cofee",
-        link: "./menu/cofee.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/cofee.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Support",
         data: "Please Support my hardwork...",
     },
     {
         title: "Home",
-        link: "index.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/index.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Home",
         data: "Go back to home page.",
     },
     {
         title: "Nonprofit community",
-        link: "./menu/nontprotfit.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/nontprotfit.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Nonprofit",
         data: "Learn more about our network and be part of our global team.",
 
@@ -240,8 +240,8 @@ const posts = [
     {
 
         title: "Contact Information or social media",
-        link: "./menu/contact.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/contact.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Contact Information",
         data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
@@ -249,8 +249,8 @@ const posts = [
        {
 
         title: "About Samson Flomo; author",
-        link: "./menu/about.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/about.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "About Author",
         data: "Get a glipse of who am.",
 
@@ -258,8 +258,8 @@ const posts = [
        {
 
         title: "NewsLeter",
-        link: "./menu/newsletter.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/newsletter.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "menu",
         data: "Subscribe to our newsletter.",
 
@@ -267,32 +267,30 @@ const posts = [
        {
 
         title: "Contact Information or social media",
-
-        link: "./menu/contact.html",
-        img: "./assets/images/featured/featured-1.jpg",
-        category: "Contact Information",
+        link: "https://samsonflomo.github.io/blog/menu/contact.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
+        mpc_link: "../categories/skills.html",
         data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
        {
 
         title: "Contact Information or social media",
-
-        link: "./menu/contact.html",
-        img: "./assets/images/featured/featured-1.jpg",
+        link: "https://samsonflomo.github.io/blog/menu/contact.html",
+        img: "https://samsonflomo.github.io/blog/assets/images/featured/featured-1.jpg",
         category: "Contact Information",
         data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
 ];
 
-let searchResultsContainer = document.getElementsByClassName("search-results-container")[0];
+
+let  SearchResults = document.getElementsByClassName("search-results-container")[0];
 let search = document.getElementById('searchInput')
 
 window.addEventListener('load', () => {
     posts.forEach(element => {
         const {title, link, img, category, data} = element;
-
         let card = document.createElement('a');
         card.href = link
         card.innerHTML = `<img src="${img}">
@@ -301,13 +299,13 @@ window.addEventListener('load', () => {
             <p>${data}</p>
             </div>`;
 
-    searchResultsContainer.appendChild(card);
-    });
+    SearchResults.appendChild(card);
+        });
 })
 
 search.addEventListener('keyup', () => {
     let filter = search.value.toUpperCase();
-    let a = searchResultsContainer.getElementsByTagName('a');
+    let a = SearchResults.getElementsByTagName('a');
 
     for (let i = 0; i < a.length; i++) {
         let b = a[i].getElementsByClassName('result-content')[0];
@@ -316,15 +314,15 @@ search.addEventListener('keyup', () => {
         let textValue = c.textContent || c.innerText;
         if (textValue.toUpperCase().indexOf(filter) > -1) {
             a[i].style.display = '';
-            searchResultsContainer.style.visibility = 'visible';
-            searchResultsContainer.style.opacity = 1;
+            SearchResults.style.visibility = 'visible';
+            SearchResults.style.opacity = 1;
         } else {
             a[i].style.display = 'none';
         }
 
         if (search.value.length === 0) {
-            searchResultsContainer.style.visibility = 'hidden';
-            searchResultsContainer.style.opacity = 0;
+            SearchResults.style.visibility = 'hidden';
+            SearchResults.style.opacity = 0;
         }
     }
 });
@@ -342,18 +340,6 @@ const message = document.getElementById("message");
 
 
 function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br>Email Address: ${email.value}
-    <br>Phone Number: ${phone.value}<br>${message.value}`;
-
- Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "flomosamson125@gmail.com",
-    Password : "BC065BF2A9FAC754887278D0B5BBC8A88C1B",
-    To : 'flomosamson125@gmail.com',
-    From : "flomosamson125@gmail.com",
-    Subject : subject.value,
-    Body : bodyMessage
- }).then(
 
   message => {
       if(message == "OK"){
@@ -365,7 +351,6 @@ function sendEmail() {
       };
   }
 
-);
 
 };
 
@@ -396,7 +381,6 @@ function checkInputs() {
 document.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener("submit", (e) => {
-    e.preventDefault();
 
     checkInputs();
 

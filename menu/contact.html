@@ -76,7 +76,7 @@
             <span class="form-note">Or press ESC to close.</span>
 
 
-        <div class="search-results-container">
+        <div class="search-results-container search-results-container">
 
             <!-- <a href="#">
                 <img src="./assets/images/older_posts/older_posts_1.jpg">
@@ -104,18 +104,18 @@
 
                         <h3 class="author-name contact-title">Contact me!</h3>
 
-                        <form action="#" id="contact-form">
+                        <form action="https://script.google.com/macros/s/AKfycbyKFswsvOXwjYuYZfh7HroDYpKLeFMl6TMaUriff2nU4y5_2McLJMpyzSOh_gHaZ_i_/exec" id="contact-form" class="gform" method="post">
 
 
                             <div class="input-box">
                                       
                                 <div class="input-field field">
-                                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" name="name" required>
                                     <div class="error-text">Full Name can't be blank!</div>
                                 </div>
                                 
                                  <div class="input-field field">
-                                    <input type="email" placeholder="Email Address" id="email" class="item"autocomplete="off">
+                                    <input type="email" placeholder="Email Address" id="email" class="item"autocomplete="off" name="email">
                                     <div class="error-text">Email Address can't be blank!</div>
                                 </div>
 
@@ -125,19 +125,19 @@
                             <div class="input-box">
                                 
                                  <div class="input-field field">
-                                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off" name="number" required>
                                     <div class="error-text">Phone Number can't be blank!</div>
                                 </div>
                                 
                                  <div class="input-field field">
-                                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" name="subject" required>
                                     <div class="error-text">Subject can't be blank!</div>
                                 </div>
 
                             </div>
                                 
                                 <div class="textarear-field field">
-                                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" name="message" required></textarea>
                                     <div class="error-text">Message can't be blank!</div>
                                 </div>
 
@@ -265,7 +265,6 @@
 
 
     <!--Send Email Script -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Swiper.js -->
     <script src="../assets/js/swiper-bundle.min.js"></script>
