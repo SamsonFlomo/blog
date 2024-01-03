@@ -334,38 +334,26 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const phone = document.getElementById("phone");
-const message = document.getElementById("message");
-
-    console.log(fullName);
-
-
+const message = document.getElemtentByClassName("textarear-message");
 function sendEmail() {
-
-  message => {
-      if(message == "OK"){
-          Swal.fire({
-            title: "Success!",
-            text: "Message sent successfully!",
-            icon: "success"
-           });
-      };
-  }
-
-
-};
+    Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success"
+    });
+}
 
 function checkInputs() {
     const items = document.querySelectorAll(".item");
 
-    for(const item of items) {
-        if(item.value == "") {
+    for (const item of items) {
+        if (item.value == "") {
             item.classList.add("error");
             item.parentElement.classList.add("error");
-
         }
 
         item.addEventListener("keyup", () => {
-            if(item.value != "") {
+            if (item.value != "") {
                 item.classList.remove("error");
                 item.parentElement.classList.remove("error");
             } else {
@@ -374,29 +362,24 @@ function checkInputs() {
             }
         });
     }
+}
 
-};
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
+document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent the default form submission
 
-    checkInputs();
+        checkInputs();
 
-    if(!fullName.classList.contains("error") &&
-       !email.classList.contains("error") &&
-        !phone.classList.contains("error") &&
-        !subject.classList.contains("error") &&
-        !message.classList.contains("error")) {
-
-        sendEmail();
-
-        form.reset();
-        return false;
-    }
+        if (
+            !fullName.classList.contains("error") &&
+            !email.classList.contains("error") &&
+            !phone.classList.contains("error") &&
+            !subject.classList.contains("error")
+        ) {
+            sendEmail();
+            form.reset();
+            form.submit();
+        }
+    });
 });
-
-});
-
 
