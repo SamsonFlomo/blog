@@ -270,37 +270,14 @@ const phone = document.getElementById("phone");
 const message = document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br>
-                         Email: ${email.value}<br>
-                         Number: ${phone.value}<br>
-                         Subject: ${subject.value}<br>
-                         Message: ${message.value}`;
+    Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success"
+    });
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "flomosamson125@gmail.com",
-        Password: "18423E49DDBAEE64F9563DA4E4B59A373AEB",
-        To: 'Flomosamson125@gmail.com',
-        From: "flomosamson125@gmail.com",
-        Subject: subject.value,
-        Body: bodyMessage
-    }).then(
-        message => {
-        if (message == "OK") {
-            swal.fire({
-                title: "Success!",
-                text: "Message sent successfully!",
-                icon: "Success"
-            });
-        } else {
-            swal.fire({
-                title: "Failure!",
-                text: "Sent failed!",
-                icon: "failure"
-        }
-
-        }
-    );
+            form.submit();
+            form.reset();
 }
 
 function checkInputs() {
@@ -326,10 +303,19 @@ function checkInputs() {
 
 document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevent the default form submission
+
         checkInputs();
-        sendEmail();
-        form.reset();
+
+        if (
+            !fullName.classList.contains("error") &&
+            !email.classList.contains("error") &&
+            !phone.classList.contains("error") &&
+            !subject.classList.contains("error") &&
+            !message.classList.contains("error")
+        ) {
+            sendEmail();
+        }
     });
 });
 
