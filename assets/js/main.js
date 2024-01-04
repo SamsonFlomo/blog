@@ -104,73 +104,6 @@ for(f = 0; f < faq.length; f++) {
 }
 
 
-   // Quote js
-    const quote = document.getElementById("quote");
-    const author_q = document.getElementById("author");
-    const quoteDetails = document.getElementById("quoteDetails");
-    const quoteDate = document.getElementById("quoteDate");
-    const quoteAuthor = document.getElementById("quoteAuthor");
-    const api_url = "https://api.quotable.io/random";
-
-    // Your own quotes
-    const customQuotes = [
-        {
-            content: "Your custom quote 1",
-            author: "Author 1",
-            dateModified: "December 15, 2023"
-        },
-        {
-            content: "Your custom quote 2",
-            author: "Author 2",
-            dateModified: "December 16, 2023"
-        },
-        // Add more custom quotes as needed
-    ];
-
-    function getRandomQuote() {
-        // Randomly choose between quotable.io API and custom quotes
-        const randomChoice = Math.random() < 0.5 ? getQuotableIOQuote() : getCustomQuote();
-        return randomChoice;
-    }
-
-    function getQuotableIOQuote() {
-        // Call quotable.io API to get a random quote
-        // This function should return a Promise
-        return fetch(api_url)
-            .then(response => response.json());
-    }
-
-    function getCustomQuote() {
-        // Randomly choose a custom quote
-        return customQuotes[Math.floor(Math.random() * customQuotes.length)];
-    }
-
-    function updateQuote({ content, author, dateModified }) {
-        quote.innerHTML = `<span><i class="ri-double-quotes-l"></i></span>
-                            ${content}
-                            <span><i class="ri-double-quotes-r"></i></span>`;
-        quoteDate.innerHTML = dateModified;
-        quoteAuthor.innerHTML = author;
-        author_q.innerHTML = author;
-    }
-
-    async function getQuote(url) {
-        try {
-            const quoteData = await getRandomQuote();
-            updateQuote(quoteData);
-        } catch (error) {
-            console.error("Error fetching quote:", error);
-        }
-    }
-
-    function toggleDetails() {
-        // Toggle the display of the detailed content
-        quoteDetails.style.display = quoteDetails.style.display === "none" ? "block" : "none";
-    }
-
-    // Initial call to get a quote
-    getQuote(api_url);
-
 
 // search function
 const posts = [
@@ -334,13 +267,40 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const phone = document.getElementById("phone");
-const message = document.getElemtentByClassName("textarear-message");
+const message = document.getElementById("message");
+
 function sendEmail() {
-    Swal.fire({
-        title: "Success!",
-        text: "Message sent successfully!",
-        icon: "success"
-    });
+    const bodyMessage = `Full Name: ${fullName.value}<br>
+                         Email: ${email.value}<br>
+                         Number: ${phone.value}<br>
+                         Subject: ${subject.value}<br>
+                         Message: ${message.value}`;
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "flomosamson125@gmail.com",
+        Password: "18423E49DDBAEE64F9563DA4E4B59A373AEB",
+        To: 'Flomosamson125@gmail.com',
+        From: "flomosamson125@gmail.com",
+        Subject: subject.value,
+        Body: bodyMessage
+    }).then(
+        message => {
+        if (message == "OK") {
+            swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "Success"
+            });
+        } else {
+            swal.fire({
+                title: "Failure!",
+                text: "Sent failed!",
+                icon: "failure"
+        }
+
+        }
+    );
 }
 
 function checkInputs() {
@@ -366,20 +326,10 @@ function checkInputs() {
 
 document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (e) => {
-        e.preventDefault(); // Prevent the default form submission
-
+        e.preventDefault();
         checkInputs();
-
-        if (
-            !fullName.classList.contains("error") &&
-            !email.classList.contains("error") &&
-            !phone.classList.contains("error") &&
-            !subject.classList.contains("error")
-        ) {
-            sendEmail();
-            form.reset();
-            form.submit();
-        }
+        sendEmail();
+        form.reset();
     });
 });
 

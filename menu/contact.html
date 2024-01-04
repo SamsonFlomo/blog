@@ -104,14 +104,14 @@
 
                         <h3 class="author-name contact-title">Contact me!</h3>
 
-                        <form action="https://script.google.com/macros/s/AKfycbyKFswsvOXwjYuYZfh7HroDYpKLeFMl6TMaUriff2nU4y5_2McLJMpyzSOh_gHaZ_i_/exec" id="contact-form" class="gform" method="post">
+                        <form action="#" id="contact-form">
 
 
                             <div class="input-box">
                                       
                                 <div class="input-field field">
                                     <input type="text" placeholder="Full Name" id="name" class="item" 
-                                    autocomplete="off" name="name" required>
+                                    autocomplete="off" name="name">
                                     <div class="error-text">Full Name can't be blank!</div>
                                 </div>
                                 
@@ -128,13 +128,13 @@
                                 
                                  <div class="input-field field">
                                     <input type="text" placeholder="Phone Number" id="phone" class="item" 
-                                    autocomplete="off" name="number" required>
+                                    autocomplete="off" name="number">
                                     <div class="error-text">Phone Number can't be blank!</div>
                                 </div>
                                 
                                  <div class="input-field field">
                                     <input type="text" placeholder="Subject" id="subject" class="item" 
-                                    autocomplete="off" name="subject" required>
+                                    autocomplete="off" name="subject">
                                     <div class="error-text">Subject can't be blank!</div>
                                 </div>
 
@@ -142,17 +142,13 @@
                                 
                                 <div class="textarear-field field">
                                     <textarea cols="30" rows="10" placeholder="Your Message" 
-                                    class="item textarear-message" autocomplete="off" name="message"https://docs.google.com/spreadsheets/d/1GDukf1vryGRzikpi5xYCxHeREj5AC6icyT8RULqeET4/edit?pli=1#gid=0 required></textarea>
+                                    class="item textarear-message" autocomplete="off" name="message" id="message"></textarea>
                                     <div class="error-text">Message can't be blank!</div>
                                 </div>
 
                                 <button type="submit">Send message</button>
                                 
-                                <div style="display:none;" class="thankyou_message">
-                               <!-- You can customize the thankyou message by editing the code below -->
-                               <h2><em>Thanks</em> for contacting us! We will get back to you soon!
-                               </h2>
-                               </div>
+                              </div>
 
                         </form>
 
@@ -277,10 +273,10 @@
 
     <!--Send Email Script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Swiper.js -->
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="../assets/js/main.js"></script>
-    <<script data-cfasync="false" type="text/javascript" src="https://samsonflomo.github.io/blog/assets/js/form-submission-handler.js"></script>
 </body>
 </html>
