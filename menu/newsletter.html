@@ -107,14 +107,21 @@
                 <p class="newsletter-description">This text contains everything that 
                 describes the subscription</p>
 
-                <form action="" class="form">
-                    <input type="email" class="form-input" 
-                    placeholder="Enter your email address">
+                <form action="https://script.google.com/macros/s/AKfycbz2mU0VukdyEMt37HioTwxWXnb8YzDdVF2yaEStNVJZRCV5pzQSl57adH-Y3cMrbUh2/exec" id="subscription-form" class="gform" method="post">
+                    
+                    <input type="email" class="form-input" placeholder="Enter your email address" name="email">
+                    
                     <button class="btn form-btn" type="submit">
                         <i class="ri-mail-send-line"></i>
                     </button>
+                    
+                    
+                     <div style="display:none;" class="thankyou_message">
+                               <h2><em>Thanks</em> for for subscribing! 
+                                Don't forget to check your email for latest contents.
+                               </h2>
+                               </div>
                 </form>
-
             </div>
 
         </div>
