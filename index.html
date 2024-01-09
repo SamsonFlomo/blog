@@ -67,7 +67,7 @@
     <div class="search-form-container container" id="search-form-container">
 
         <div class="form-container-inner">
-            <div class="form">
+            <div class="gform">
                <input type="text" class="form-input" id="searchInput" placeholder="What are you looking for?">
               <button class="btn form-btn" type="submit">
                <i class="ri-search-line"></i>
@@ -549,12 +549,19 @@
                 <p class="newsletter-description">This text contains everything that 
                 describes the subscription</p>
 
-                <form action="" class="form">
-                    <input type="email" class="form-input" 
-                    placeholder="Enter your email address">
+               </form>
+<form action="https://script.google.com/macros/s/AKfycbwKWp9q4iZb6qG6yF1Uf9w9-vsslz8OlToVy00lBN2EXlOMqAtTuLINkS7x93I5ZmfC/exec" id="subscription-form" class="gform" method="post">
+                    
+                    <input type="email" class="form-input" placeholder="Enter your email address" name="email">
+                    
                     <button class="btn form-btn" type="submit">
                         <i class="ri-mail-send-line"></i>
                     </button>
+                    
+                    
+                     <div style="display:none;" class="thankyou_message list-link">
+                         <i class="ri-mail-check-fill"></i>
+                     </div>
                 </form>
 
             </div>
@@ -647,6 +654,7 @@
         </div>
     </footer>
 
+    <script data-cfasync="false" type="text/javascript" src="https://samsonflomo.github.io/blog/assets/js/form-submission-handler.js"></script>
     <!-- Swiper.js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->

@@ -267,7 +267,7 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const phone = document.getElementById("phone");
-const message = document.getElementById("message");
+const message = document.getElementById("message-id");
 
 function sendEmail() {
     Swal.fire({

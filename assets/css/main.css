@@ -1098,6 +1098,20 @@ body.light-theme{
 .container .faq-wrapper .faq.active {
     border: none;
 }
+
+/* Elements */
+.about-s-content .element-links {
+    margin-top: 4rem;
+    cursor: pointer;
+    margin-left: auto;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-s-content .element-links:hover {
+    text-decoration: underline;
+} 
         
 /* media screens */
 @media screen and (max-width: 700px) {
