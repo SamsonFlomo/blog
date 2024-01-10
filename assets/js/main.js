@@ -319,3 +319,63 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// Quote js
+    const quote = document.getElementById("quote");
+    const author_q = document.getElementById("author");
+    const quoteDetails = document.getElementById("quoteDetails");
+    const quoteDate = document.getElementById("quoteDate");
+    const quoteAuthor = document.getElementById("quoteAuthor");
+    const api_url = "https://api.quotable.io/random";
+    // Your own quotes
+    const customQuotes = [
+        {
+            content: "Your custom quote 1",
+            author: "Author 1",
+            dateModified: "December 15, 2023"
+        },
+        {
+            content: "Your custom quote 2",
+            author: "Author 2",
+            dateModified: "December 16, 2023"
+        },
+        // Add more custom quotes as needed
+    ];
+    function getRandomQuote() {
+        // Randomly choose between quotable.io API and custom quotes
+        const randomChoice = Math.random() < 0.5 ? getQuotableIOQuote() : getCustomQuote();
+        return randomChoice;
+    }
+    function getQuotableIOQuote() {
+        // Call quotable.io API to get a random quote
+        // This function should return a Promise
+        return fetch(api_url)
+            .then(response => response.json());
+    }
+    function getCustomQuote() {
+        // Randomly choose a custom quote
+        return customQuotes[Math.floor(Math.random() * customQuotes.length)];
+    }
+    function updateQuote({ content, author, dateModified }) {
+        quote.innerHTML = `<span><i class="ri-double-quotes-l"></i></span>
+                            ${content}
+                            <span><i class="ri-double-quotes-r"></i></span>`;
+        quoteDate.innerHTML = dateModified;
+        quoteAuthor.innerHTML = author;
+        author_q.innerHTML = author;
+    }
+
+    async function getQuote(url) {
+        try {
+            const quoteData = await getRandomQuote();
+            updateQuote(quoteData);
+        } catch (error) {
+            console.error("Error fetching quote:", error);
+        }
+    }
+    function toggleDetails() {
+        // Toggle the display of the detailed content
+        quoteDetails.style.display = quoteDetails.style.display === "none" ? "block" : "none";
+    }
+    // Initial call to get a quote
+    getQuote(api_url);
