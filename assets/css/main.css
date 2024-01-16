@@ -794,7 +794,7 @@ body.light-theme{
 
 .about-s-title .author-name {
     text-transform: uppercase;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     margin-bottom: 2rem;
     font-weight: 600;
 }
