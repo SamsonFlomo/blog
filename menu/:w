@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <title>SamsonFlomo | Newsletter</title>
+    <title>Contact | Samson Flomo</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.ico">
     <!-- Remix icons -->
@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
     <link rel="stylesheet" href="../assets/css/main.css">
-   <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
         #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+
 
 </head>
 <body>
@@ -107,22 +108,71 @@
         </button>
     </div>
     
-    <!-- Newsletter -->
+    <!-- Contact form -->
     <section class="newsletter section section-header-offset">
         <div class="container">
 
-            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+                    <div class="author-contact">
 
-            <div class="form-container-inner">
-                <h6 class="title newsletter-title">Subscribe to Samsons's Blog</h6>
-                <p class="newsletter-description">
-                Inspired? Stay connected by sharing your email with me. 
-                Receive the latest updates and exclusive content straight to your inbox.
-                </p>
+                        <h3 class="author-name contact-title">Contact me!</h3>
 
-                <div id="mc_embed_shell">
+                        <form action="https://script.google.com/macros/s/AKfycbyKFswsvOXwjYuYZfh7HroDYpKLeFMl6TMaUriff2nU4y5_2McLJMpyzSOh_gHaZ_i_/exec" id="contact-form" class="gform" method="post">
+
+
+                            <div class="input-box">
+                                      
+                                <div class="input-field field">
+                                    <input type="text" placeholder="Full Name" id="name" class="item" 
+                                    autocomplete="off" name="name">
+                                    <div class="error-text">Full Name can't be blank!</div>
+                                </div>
+                                
+                                 <div class="input-field field">
+                                    <input type="email" placeholder="Email Address" id="email" class="item" 
+                                    autocomplete="off" name="email">
+                                    <div class="error-text">Email Address can't be blank!</div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="input-box">
+                                
+                                 <div class="input-field field">
+                                    <input type="text" placeholder="Phone Number" id="phone" class="item" 
+                                    autocomplete="off" name="number">
+                                    <div class="error-text">Phone Number can't be blank!</div>
+                                </div>
+                                
+                                 <div class="input-field field">
+                                    <input type="text" placeholder="Subject" id="subject" class="item" 
+                                    autocomplete="off" name="subject">
+                                    <div class="error-text">Subject can't be blank!</div>
+                                </div>
+
+                            </div>
+                                
+                                <div class="textarear-field field">
+                                    <textarea cols="30" rows="10" placeholder="Your Message" 
+                                                                  class="item textarear-message" autmcomplete="off" name="message" id="message-id"></textarea>
+                                    <div class="error-text">Message can't be blank!</div>
+                                </div>
+
+                                <button type="submit">Send message</button>
+                                
+                                <div style="display:none;" class="thankyou_message">
+                               <h2><em>Thanks</em> 
+                                   for contacting me! I will send an email 
+                                   very soon!
+                               </h2>
+                               </div>
+
+                        </form>
+
+
+           <div id="mc_embed_shell">
    <div id="mc_embed_signup">
-    <form action="https://github.us17.list-manage.com/subscribe/post?u=4c1a2f77cd5e27d03c9eeab64&amp;id=61e0e5eab3&amp;f_id=00f367e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+    <form action="https://script.google.com/macros/s/AKfycbyKFswsvOXwjYuYZfh7HroDYpKLeFMl6TMaUriff2nU4y5_2McLJMpyzSOh_gHaZ_i_/exec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate gform" target="_blank">
         <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
@@ -132,21 +182,27 @@
 
 
             <div class="mc-field-group">
-                <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+                <label for="mce-FNAME">Full Name<span class="asterisk">*</span></label>
                 <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value="">
             </div>
 
 
             <div class="mc-field-group">
-                <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+                <label for="mce-LNAME">Number <span class="asterisk">*</span></label>
                 <input type="text" name="LNAME" class="required text" id="mce-LNAME" value="" required="">
             </div>
 
 
             <div class="mc-field-group">
-                <label for="mce-PHONE">Phone(whatsApp)</label>
-                <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""><span id="mce-PHONE-HELPERTEXT" class="helper_text">There's more on WhatsApp(optional).</span>
+                <label for="mce-PHONE">Subject</label>
+                <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
             </div>
+
+            <div class="mc-field-group">
+                <label for="mce-PHONE">Message</label>
+                <textarea name="PHONE" class="REQ_CSS textarea-message" id="mce-PHONE" value="" cols="30" rows="10"></textarea>
+            </div>
+
 
             <div hidden=""><input type="hidden" name="tags" value="6597852"></div>
             <div id="mce-responses" class="clear foot">
@@ -159,7 +215,7 @@
     </div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button submit" value="Subscribe">
                 <p style="margin: 0px auto;"><a href="http://eepurl.com/iH8Vbw" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
             </div>
         </div>
@@ -167,9 +223,36 @@
 </form>
 </div>
 </div>
-                
 
-                           </div>
+                         <ul class="list social-media">
+
+                             <li class="list-item">
+                                <a href="https://www.instagram.com/samsonsam914?igshid=OGQ5ZDc2ODk2ZA==" class="list-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a href="https://www.facebook.com/samson.flomo.98 class="list-link">
+                                    <i class="ri-facebook-circle-line"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a href="https://www.linkedin.com/in/samson-flomo-999b43273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app class="list-link">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a href="https://call.whatsapp.com/video/RjTRX3aAqpqZ3c5Tmf8BMJ" class="list-link">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                               
+                </div>
 
         </div>
     </section>
@@ -184,7 +267,7 @@
                 </a>
                 <p class="company-description">Welcome to a blog that transcends mere content – dedicated to your holistic development: spiritually, physically, and psychologically. Each line you read is a transformative journey, ensuring you're never the same again.</p>
                 <ul class="list social-media">
-                   <li class="list-item">
+                  <li class="list-item">
                         <a href="https://www.instagram.com/samsonsam914?igshid=OGQ5ZDc2ODk2ZA==" class="list-link"><i class="ri-instagram-line"></i></a>
                     </li>
                     <li class="list-item">
@@ -232,7 +315,7 @@
                     </li>
                     <li class="list-item">
                         <a href="../categories/elements.html" class="list-link">Elements</a>
-                    </li> 
+                    </li>
                     <li class="list-item">
                         <a href="../categories/faq.html" class="list-link">F.A.Q</a>
                     </li>
@@ -249,24 +332,22 @@
                         <a href="about.html" class="list-link">About Author</a>
                     </li>
                     <li class="list-item">
-                        <a href="nonprofit.html" class="list-link">Nonprofit</a>
+                        <a href="nonprofit.html" class="list-link">Nonprofit<https://docs.google.com/spreadsheets/d/1GDukf1vryGRzikpi5xYCxHeREj5AC6icyT8RULqeET4/edit?pli=1#gid=0/a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
+
+    <!--Send Email Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Swiper.js -->
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="../assets/js/main.js"></script>
-    <!--email-->
     <script data-cfasync="false" type="text/javascript" src="https://samsonflomo.github.io/blog/assets/js/form-submission-handler.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/4c1a2f77cd5e27d03c9eeab64/8b13a85a8a4d7a0e52ee5357b.js");</script>
-    
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
-
 
 
 </body>
