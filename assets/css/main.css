@@ -756,7 +756,7 @@ body.light-theme{
 }
 
 .quote span{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .author{
@@ -780,6 +780,7 @@ body.light-theme{
 }
 
 .about-s-content {
+    gap: var(--gap);
     width: 60%;
     align-items: center;
 }
@@ -1057,6 +1058,11 @@ body.light-theme{
     font-size: var(--font-size-sm);
 }
 
+.quote-in-about {
+    width: 70%;
+    font-style: italic;
+}
+
 .container .faq-wrapper {
     text-align: center;
     gap: var(--gap);
@@ -1112,16 +1118,23 @@ body.light-theme{
 /* Elements */
 .about-s-content .element-links {
     margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     cursor: pointer;
     margin-left: auto;
     transition: .5s;
     display: flex;
     flex-direction: row;
+    border-bottom: solid 2px #0ef;
 }
 
 .about-s-content .element-links:hover {
-    text-decoration: underline;
+    border-bottom-color: var(--light-color);
 } 
+
+.about-s-content .element-links:hover i {
+    transform: scale(1.5);
+}
 
 /* MailChimp Form CSS */
 
@@ -1130,6 +1143,47 @@ body.light-theme{
     background: transparent;
 }
  
+/* Buy Me a Cofee */
+.cofee-container {
+    background-color: var(--secondary-background-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.mobile-show {
+    border: .1rem solid #0ef;
+    margin-bottom: 4rem;
+}
+
+.cofee-btn {
+    border-bottom: solid 2px #0ef;
+    display: flex;
+    justify-content: center;
+    color: var(--light-color);
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.cofee-link {
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.cofee-link:hover i {
+    transform: scale(1.5);
+    margin-left: 1rem;
+}
+
+    /* nonprofit motto */
+.nonprofit-motto {
+        width: 70%;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
 
         
 /* media screens */
@@ -1140,6 +1194,33 @@ body.light-theme{
         display: flex;
 
     }
+
+    /* Cofee */
+    .cofee-link {
+        font-size: var(--font-size-sm);
+    }
+
+    .cofee-btn {
+        font-size: var(--font-size-sm);
+        width: 100%;
+    }
+
+    .support-mobile-money {
+        padding: 1rem;
+        gap: var(--gap);
+    }
+
+    .support-mobile-money div h3 {
+
+        font-size: var(--font-size-sm);
+    } 
+
+
+   /* nonprofit */
+    .nonprofit-motto {
+        width: 80%;
+    }
+
 
    
     .about-s-content {
@@ -1153,6 +1234,10 @@ body.light-theme{
 
     .about-image-box {
         width: 60%;
+    }
+
+    .quote-in-about {
+        width: 80%;
     }
 
     .author-contact form {
