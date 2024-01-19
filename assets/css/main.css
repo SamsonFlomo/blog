@@ -1325,6 +1325,7 @@ body.light-theme{
 
 
 @media screen and (min-width: 700px) {
+
     .field .item {
         font-size: var(--font-size-sm);
     }
