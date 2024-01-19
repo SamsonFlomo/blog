@@ -1082,7 +1082,7 @@ body.light-theme{
     align-items: center;
     transition: .4s;
     font-weight: bold;
-    border-bottom: solid 1.5rem;
+    border-bottom: solid 1.5rem #add8e6;
 }
 
 .container .faq-wrapper .faq .faq-btn i {
@@ -1103,6 +1103,10 @@ body.light-theme{
     line-height: 1.4;
 }
 
+.faq-btn {
+    transition: .5s;
+}
+
 .active, .faq-btn:hover {
     color: var(--light-color);
 }
@@ -1116,7 +1120,7 @@ body.light-theme{
 }
 
 /* Elements */
-.about-s-content .element-links {
+.element-links {
     margin-top: 4rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -1126,13 +1130,14 @@ body.light-theme{
     display: flex;
     flex-direction: row;
     border-bottom: solid 2px #0ef;
+    text-transform: uppercase;
 }
 
-.about-s-content .element-links:hover {
+.element-links:hover {
     border-bottom-color: var(--light-color);
 } 
 
-.about-s-content .element-links:hover i {
+.element-links:hover i {
     transform: scale(1.5);
 }
 
@@ -1142,7 +1147,20 @@ body.light-theme{
     padding: 1rem;
     background: transparent;
 }
+
+/* Content Link */
+
+.content-link {
+    color: var(--light-color);
+    font-style: italic;
+    font-weight: 600;
+    transition: .5s;
+}
  
+.content-link:hover {
+    font-size: 1.7rem;
+    color: #0000ff;
+}
 /* Buy Me a Cofee */
 .cofee-container {
     background-color: var(--secondary-background-color);
