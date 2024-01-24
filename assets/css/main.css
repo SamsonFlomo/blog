@@ -316,12 +316,12 @@ body.light-theme{
 }
 
 .form-container-inner .search-results-container a .result-content p {
-    color: rgba(255, 255, 255,.7);
+    color: var(--light-color);
     display: flex;
     justify-content: space-between;
 }
 
-.form-container-inner .search-results-container a .result-content p span {
+.search-results-container a .result-content p span {
     margin: 0 1rem;
     font-size: 1rem;
 }
@@ -1070,6 +1070,8 @@ body.light-theme{
 
 .container .faq-wrapper .faq {
     background-color: var(--secondary-background-color);
+    width: 50%;
+    margin: 0 auto;
 }
 
 .container .faq-wrapper .faq .faq-btn {
@@ -1094,10 +1096,6 @@ body.light-theme{
     text-align: left;
 }
 
-.container .faq-wrapper .faq p:hover {
-    color: var(--light-color);
-}
-
 .container .faq-wrapper .faq .panel {
     display:  none;
     line-height: 1.4;
@@ -1111,8 +1109,13 @@ body.light-theme{
     color: var(--light-color);
 }
 
+.panel p {
+    color: var(--light-color-alt);
+}
+
+
 .container .faq-wrapper .faq {
-    border: .1rem solid rgba(0,0,0,.4);
+    border: .1rem solid var(--light-color-alt);
 }
 
 .container .faq-wrapper .faq.active {
@@ -1207,6 +1210,22 @@ body.light-theme{
 /* media screens */
 @media screen and (max-width: 700px) {
 
+    .container .faq-wrapper .faq .faq-btn i { 
+        font-size: 3rem;
+    }
+
+    .container .faq-wrapper .faq .faq-btn {
+        font-size: 1.55rem;
+    }
+
+    .element-links {
+        font-size: 1.3rem;
+    }
+
+    .container .faq-wrapper .faq {
+        width: 70%;
+    }
+
     /* MailChimp */
     #mc_embed_shell { 
         display: flex;
@@ -1291,7 +1310,19 @@ body.light-theme{
 
 }
 
+@media screen and (max-width: 420px) { 
+    .container .faq-wrapper .faq {
+        width: 90%;
+    }
+
+}
+
 @media screen and (max-width: 340px) {
+
+
+    .container .faq-wrapper .faq {
+        width: 100%;
+    }
 
 .quote-box .quote-btn button {
         font-size: 1rem;
@@ -1304,14 +1335,6 @@ body.light-theme{
 
 .quote-box .quote-author::before {
     left: -28px;
-}
-
-.field .item {
-    width: 40vw;
-}
-
-.input-field.field input {
-    width: 50vw;
 }
 
 .field .item {

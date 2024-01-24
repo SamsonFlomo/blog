@@ -117,101 +117,125 @@ const posts = [
     {
         title: "Development and skills",
         link: "https://samsonflomo.pages.dev/categories/skills.html",
-        img: "https://samsonflomo.pages.dev/assets/images/skills.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Development",
-        data: "Read some powerful excerps and pickup some skills along the way..."
+        data: "Read some powerful excerps and pickup some skill along the way..."
     },
     {
         title: "God",
         link: "https://samsonflomo.pages.dev/categories/God.html",
-        img: "https://samsonflomo.pages.dev/assets/images/God.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "God",
         data: "Learn about the creator your relationship with him.", },
     {
         title: "Nature",
         link: "https://samsonflomo.pages.dev/categories/nature.html",
-        img: "https://samsonflomo.pages.dev/assets/images/nature.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Nature",
         data: "View posts about nature....",
     },
     {
         title: "Fitness",
         link: "https://samsonflomo.pages.dev/categories/fitness.html",
-        img: "https://samsonflomo.pages.dev/assets/images/fitness.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Fitness",
-        data: "See and read about posts on fitness.",
+        data: "See and read about posts on fitness.j",
     },
     {
         title: "Inspirational or Motivational Quotes",
         link: "https://samsonflomo.pages.dev/menu/quotes.html",
-        img: "https://samsonflomo.pages.dev/assets/images/quote.png",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Quotes",
         data: "Boast your drive with some inspirational quotes.",
     },
-        {
+    {
+        title: "Buy me a cofee",
+        link: "https://samsonflomo.pages.dev/menu/cofee.html",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        category: "Support",
+        data: "Please Support my hardwork...",
+    },
+    {
         title: "Home",
         link: "https://samsonflomo.pages.dev/index.html",
-        img: "https://samsonflomo.pages.dev/assets/images/home.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Home",
         data: "Go back to home page.",
     },
     {
         title: "Nonprofit community",
         link: "https://samsonflomo.pages.dev/menu/nontprotfit.html",
-        img: "https://samsonflomo.pages.dev/assets/images/nonprofit_logo.jpg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Nonprofit",
-        data: "Read about our nonprofit and support or join our global team.",
+        data: "Learn more about our network and be part of our global team.",
 
     },
     {
 
-        title: "About Author || Samson Flomo",
-        link: "https://samsonflomo.pages.dev/menu/about.html",
-        img: "https://samsonflomo.pages.dev/assets/images/author.jpg",
-        category: "About Author",
-        data: "Get a glimpse of who am.",
+        title: "Contact Information or social media",
+        link: "https://samsonflomo.pages.dev/menu/contact.html",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        category: "Contact Information",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
        {
 
-        title: "NewsLeter || Subscribe",
+        title: "About Samson Flomo; author",
+        link: "https://samsonflomo.pages.dev/menu/about.html",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        category: "About Author",
+        data: "Get a glipse of who am.",
+
+    },
+       {
+
+        title: "NewsLeter",
         link: "https://samsonflomo.pages.dev/menu/newsletter.html",
-        img: "https://samsonflomo.pages.dev/assets/images/featured/newsletter.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "menu",
-        data: "Subscribe for newsletters.",
+        data: "Subscribe to our newsletter.",
 
     },
        {
 
         title: "Contact Information or social media",
         link: "https://samsonflomo.pages.dev/menu/contact.html",
-        img: "https://samsonflomo.pages.dev/assets/images/contact.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
+
+    },
+       {
+
+        title: "Contact Information or social media",
+        link: "https://samsonflomo.pages.dev/menu/contact.html",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
         category: "Contact Information",
-        data: "You can message me here....",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
        {
 
         title: "Frequently Asked Questions",
         link: "https://samsonflomo.pages.dev/categories/faq.html",
-        img: "https://samsonflomo.pages.dev/assets/images/faq.jpeg",
-        data: "Do you have a question in mind?"
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
        {
 
         title: "Elements and Categories",
         link: "https://samsonflomo.pages.dev/categories/elements.html",
-        img: "https://samsonflomo.pages.dev/assets/images/elemtents.jpeg",
-        data: "Dimensions of my blog contents...",
+        img: "https://samsonflomo.pages.dev/assets/images/featured/featured-1.jpg",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
        {
 
         title: "Buy Me a Cofee || Support",
         link: "https://samsonflomo.pages.dev/menu/cofee.html",
-        img: "https://samsonflomo.pages.dev/assets/images/cofee.png",
-        data: "Please support the maintainence of my to help...",
+        img: "https://samsonflomo.pages.dev/assets/images/cofee.jpg",
+        data: "<span>Dec 5th 2021</span><span class='article-data-spacer'></span><span>8 Min read</span>",
 
     },
 
@@ -234,9 +258,7 @@ window.addEventListener('load', () => {
         card.innerHTML = `<img src="${img}">
             <div class="result-content">
             <h6>${title}</h6>
-            <p style='color: var(--light-color-alt)'>
-            ${data}
-            </p>
+            <p>${data}</p>
             </div>`;
 
     SearchResults.appendChild(card);
@@ -277,58 +299,15 @@ search.addEventListener('keyup', () => {
     // Your own quotes
     const customQuotes = [
         {
-            content: "The best place to train your self-discipline is when you're angry. Because when you're angry, you experience feelings you can't control.",
+            content: "Your custom quote 1",
             author: "Samson Flomo",
-            dateModified: "January 20, 2024"
+            dateModified: "December 15, 2023"
         },
         {
-            content: "Desiring is not the problem, Doing the work is not the problem,  The skill is definitely not the problem, but Consistency is the problem for many of us.",
+            content: "Your custom quote 2",
             author: "Samson Flomo",
-            dateModified: "January 20, 2024"
+            dateModified: "December 16, 2023"
         },
-        {
-            content: "Sometimes you gatto stop accepting how weak you're and embrace how strong you can become.",
-            author: "Samson Flomo",
-            dateModified: "January 21, 2024"
-        },
-        {
-            content: "Your time is the prize for success and it's not just your time, but how you spend your time.",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-        {
-            content: "Stop accepting a trashed life, refuse it with your actions!",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-        {
-            content: "When you're uncommon, get ready for the common people to envy you, to be perplexed when they see you, to discuss you.",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-        {
-            content: "When you're just starting it feels like you're doing nothing. But remember, only few have the courage to start and only 1% make it to the finish line",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-        {
-            content: "If you can't change the world, you can change your world and the world will follow.",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-        {
-            content: "You are more than enough.",
-            author: "Samson Flomo",
-            dateModified: "January 17, 2024"
-        },
-
-
-
-
-
-
-
-
         // Add more custom quotes as needed
     ];
     function getRandomQuote() {
