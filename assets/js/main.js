@@ -158,7 +158,7 @@ const posts = [
     {
         title: "Nonprofit community",
         link: "https://samsonflomo.pages.dev/menu/nontprotfit.html",
-        img: "https://samsonflomo.pages.dev/assets/images/nonprofit_logo.jpg",
+        img: "https://samsonflomo.pages.dev/assets/images/nonpofit_logo.jpg",
         category: "Nonprofit",
         data: "Read about our nonprofit and support or join our global team.",
 
@@ -176,7 +176,7 @@ const posts = [
 
         title: "NewsLeter || Subscribe",
         link: "https://samsonflomo.pages.dev/menu/newsletter.html",
-        img: "https://samsonflomo.pages.dev/assets/images/featured/newsletter.jpeg",
+        img: "https://samsonflomo.pages.dev/assets/images/newsletter.jpeg",
         category: "menu",
         data: "Subscribe for newsletters.",
 
